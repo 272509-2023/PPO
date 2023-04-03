@@ -4,7 +4,7 @@
 #include "uii.h"
 using namespace std;
 
-vector<stuentindeks> studenci;
+vector<Tstuentindeks> studenci;
 
 
 int main()

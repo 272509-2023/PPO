@@ -1,0 +1,24 @@
+/*
+  #include "uii.h"	
+  
+  projekt klasy:
+    klasa Tstudenci{
+        public:
+            //metody get, set dzieki ktorym bedziemy mogli dodawac nowych studentow i otrzmywac informacje o studentach 
+     getStudent(int i) <- funkca zwraca studenta o danym numerze w tabeli 
+     getstudent(string PESEL) <- funkcja zwraca studenta o danym peselu
+     getstudent(int index) <- funkcja zwraca studenta o danym indexie 
+     setstudent(student s) <- funkcja dodaje nowego studenta 
+     	          
+        private:
+            //zawiera dane studentow jak pesel, index etc.
+		
+		int i;
+		string PESEL;
+		int index;
+                
+    };
+	
+	
+
+*/

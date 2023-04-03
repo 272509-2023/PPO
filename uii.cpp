@@ -8,13 +8,13 @@
 #include "uii.h"
 using namespace std;
 
-void studindex(vector<stuentindeks> studenci) {
+void studindex(vector<Tstuentindeks> studenci) {
     int a;
     cout << "podaj liczbe studentow przyjetych na rok" << endl;
     cin >> a;
     do {
 
-        stuentindeks stuentindeks;
+        Tstuentindeks stuentindeks;
         cout << "imie studenta" << endl;
         cin >> stuentindeks.studenciimie;
         cout << "nazwisko studenta" << endl;
@@ -30,5 +30,6 @@ void studindex(vector<stuentindeks> studenci) {
         cout << studenci[i].studenciimie << " " << studenci[i].studencinazwisko << " ma indeks " << studenci[i].index << endl;
 
     }
+
 
 }
