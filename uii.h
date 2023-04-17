@@ -10,62 +10,33 @@
 #include <string>
 using namespace std;
 
-class Tstuentindeks {
+class Tuczelnia {
     public:
-        string getstudenciimie(){
+    string getimie();
+    string getnazwisko();
+    string getPESEL();
+    void setimie(string imie);
+    void setnazwisko(string nazwisko);
+    int setPESEL(string PESEL);
 
-            return studenciimie;
-        };
-        string getstudencinazwisko(){
-
-            return studencinazwisko;
-        };
-        string getPESEL(){
-
-            return PESEL;
-        };
-        int getindex(){
-
-            return index;
-        };
-        void setstudenciimie(string studenciimie){
-
-            this-> studenciimie=studenciimie;
-        };
-        void setstudencinazwisko(string studencinazwisko){
-
-            this-> studencinazwisko=studencinazwisko;
-        };
-        void setindex(int index){
-
-            this-> index=index;
-        }; /*    */
-        int setPESEL(string PESEL){
-            if(sizeof(PESEL) == 11){
-
-                this->PESEL=PESEL;
-
-                return 0; /* PESEL poprawny */
-            }
-            else{
-
-                return 1; /*pesel bledny*/
-            }
-
-        };
     private:
         string PESEL;
-        string studenciimie;
-        string studencinazwisko;
-        int index;
+        string imie;
+        string nazwisko;
+
 };
 
 
+class Tlistastudentó{
+
+
+
+};
 
 
 #endif //LABOLATORIAPPO1_UII_H
 
-
+//laby 2
 //1.przerabiamy strukture na klase, dane ze struktury mają byc jako private i dodajemy dana pesel(string) jako dane private
 // 2.dopisujemy metody do danych prywatnych (metody musza byc publiczne) tak zwane getery i setery (get... i set...)
 //  3.W metodzie setPESEL sprawdzamy czy pesel jest poprawny, dodajemy kody bledu
@@ -73,8 +44,10 @@ class Tstuentindeks {
 //    5. tworzymy nowa klase ktora przechowuje dane o wszystkich studentach w tablicy { mamy ja zaprojektowac }
 //     6. Do domu: skonczyc projekt
 
-
-
+//laby 3
+//1.dodać do klasy dane dla pracownika i rozbić je na dwie pod klasy pracownik i student (dane pracownika: imie, nazwisko, PESEL, stanowisko, numer karty pracownika) najpierw zaprojektować potem zaprogramować
+//2.Wprowadzić zmiany dla klasy przechowującej i dla interfejsu
+//3.Do domu skończyć wprowadzanie zmian
 
 //string getstudenciimie(){
 

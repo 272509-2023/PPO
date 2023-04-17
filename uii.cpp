@@ -8,28 +8,36 @@
 #include "uii.h"
 using namespace std;
 
-void studindex(vector<Tstuentindeks> studenci) {
-    int a;
-    cout << "podaj liczbe studentow przyjetych na rok" << endl;
-    cin >> a;
-    do {
+string Tuczelnia::getimie(){
 
-        Tstuentindeks stuentindeks;
-        cout << "imie studenta" << endl;
-        cin >> stuentindeks.studenciimie;
-        cout << "nazwisko studenta" << endl;
-        cin >> stuentindeks.studencinazwisko;
-        cout << "index" << endl;
-        cin >> stuentindeks.index;
-        studenci.emplace_back(stuentindeks);
+    return imie;
+};
+string Tuczelnia::getnazwisko(){
 
-    } while (studenci.size() < a);
+    return nazwisko;
+};
+string Tuczelnia::getPESEL(){
 
-    for (int i = 0; i < studenci.size(); i++) {
+    return PESEL;
+};
+void Tuczelnia::setimie(string imie){
 
-        cout << studenci[i].studenciimie << " " << studenci[i].studencinazwisko << " ma indeks " << studenci[i].index << endl;
+    this-> imie=imie;
+};
+void Tuczelnia::setnazwisko(string nazwisko){
 
+    this-> nazwisko=nazwisko;
+};
+int Tuczelnia::setPESEL(string PESEL) {
+    if (sizeof(PESEL) == 11) {
+
+        this->PESEL = PESEL;
+
+        return 0; /* PESEL poprawny */
+    } else {
+
+        return 1; /*pesel bledny*/
     }
-
-
 }
+
+
