@@ -3,8 +3,9 @@
 //
 #include <iostream>
 #include "student.h"
+#include "abstrakcja.h"
 
-int Tstudent::getindex(){
+string Tstudent::getindex(){
 
         return index;
 }

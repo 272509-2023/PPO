@@ -28,15 +28,13 @@ void Tuczelnia::setnazwisko(string nazwisko){
 
     this-> nazwisko=nazwisko;
 };
-int Tuczelnia::setPESEL(string PESEL) {
-    if (sizeof(PESEL) == 11) {
-
+void Tuczelnia::setPESEL(string PESEL) {
+    if (sizeof(PESEL) == 11){
         this->PESEL = PESEL;
-
-        return 0; /* PESEL poprawny */
-    } else {
-
-        return 1; /*pesel bledny*/
+        /* PESEL poprawny */
+    }
+    else {
+        /*pesel bledny*/
     }
 }
 

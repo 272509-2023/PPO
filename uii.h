@@ -5,33 +5,29 @@
 #ifndef LABOLATORIAPPO1_UII_H
 #define LABOLATORIAPPO1_UII_H
 
-
+#include "abstrakcja.h"
 #include <iostream>
 #include <string>
 using namespace std;
 
-class Tuczelnia {
+class Tuczelnia: {
     public:
     string getimie();
     string getnazwisko();
     string getPESEL();
     void setimie(string imie);
     void setnazwisko(string nazwisko);
-    int setPESEL(string PESEL);
+    void setPESEL(string PESEL);
 
-    private:
+    protected:
         string PESEL;
         string imie;
         string nazwisko;
 
-};
-
-
-class Tlistastudentó{
-
-
 
 };
+
+
 
 
 #endif //LABOLATORIAPPO1_UII_H

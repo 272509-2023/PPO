@@ -13,7 +13,7 @@ class Ttabelastudentow {
 
     int addStudenci(Tstudent s);
     Tstudent getStudent(string PESEL);
-    Tstudent getStudent(int index);
+    Tstudent getStudent(basic_string<char> index);
 
     private:
         vector<Tstudent> studenci;

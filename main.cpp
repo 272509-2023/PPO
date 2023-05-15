@@ -5,6 +5,7 @@
 #include "student.h"
 #include "tabelastudentow.h"
 #include "pracownik.h"
+
 using namespace std;
 
 Ttabelastudentow studenci;
@@ -19,7 +20,7 @@ int main()
         cout<<" "<<endl;
         cout<<"wybierz jedna z opcji"<<endl;
         cout<<"1.dodaj studenta"<<endl;
-        cout<<"2.otrzymaj studenta "<<endl;
+        cout<<"2.otrzymaj studenta/pracownika "<<endl;
         cout<<"3.wyjdź"<<endl;
         cin>>wybor;
         switch(wybor)
@@ -49,23 +50,11 @@ int main()
             }
             case 2:
             {
-                cout<< "1. otrzymaj studenta po index"<<endl;
-                cout<< "2. otrzymaj studenta po peselu"<<endl;
-                int stud;
-                cin>> stud;
-                if(stud=1)
-                {
+                Tuczelnia a;
+                Tstudent s;
 
+                cout<<"Podaj ID osoby"<<endl;
 
-                }else if(stud=2)
-                {
-
-
-                }else
-                {
-                    cout<<"bład"<<endl;
-
-                }
 
                 break;
             }
